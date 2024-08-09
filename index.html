@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="JS/funciones.js"></script>
+    <link rel="stylesheet" href="CSS/Estilo.css">
+    <title>Encuesta de Satisfacción</title>
+</head>
+<body>
+    <h1>Encuesta de Satisfacción del Cliente</h1>
+    <form id="datos" action="#" method="get">
+        <label for="txtNombre">Nombre:</label>
+        <input type="text" name="txtNombre" id="txtNombre"> <br>
+        
+        <label for="txtEmail">Correo electrónico:</label>
+        <input type="email" name="txtEmail" id="txtEmail"> <br>
+        
+        <label for="txtComentario">Comentarios:</label>
+        <textarea cols="3" rows="3" name="txtComentario" id="txtComentario"></textarea> <br>
+        
+        <label>¿Cómo calificarías nuestro servicio?</label>
+        <input type="radio" name="calificacion" value="Excelente" id="radioExcelente">
+        <label for="radioExcelente">Excelente</label>
+        <input type="radio" name="calificacion" value="Bueno" id="radioBueno">
+        <label for="radioBueno">Bueno</label>
+        <input type="radio" name="calificacion" value="Regular" id="radioRegular">
+        <label for="radioRegular">Regular</label>
+        <input type="radio" name="calificacion" value="Malo" id="radioMalo">
+        <label for="radioMalo">Malo</label> <br>
+        
+        <label for="selectBox">¿Qué aspecto te gustó más?</label>
+        <select id="selectBox" name="aspecto">
+            <option value="Calidad">Calidad</option>
+            <option value="Precio">Precio</option>
+            <option value="Servicio al Cliente">Servicio al Cliente</option>
+            <option value="Rapidez">Rapidez</option>
+        </select> <br><br>
+        
+        <label>¿Recomendarías nuestros productos/servicios?</label>
+        <input type="radio" name="recomendacion" value="Sí" id="radioSi">
+        <label for="radioSi">Sí</label>
+        <input type="radio" name="recomendacion" value="No" id="radioNo">
+        <label for="radioNo">No</label> <br><br>
+        
+        <input type="button" name="btnRecuperar" id="btnRecuperar" value="Enviar" onclick="Recuperar()"/>
+    </form>
+    
+    <div id="RecuperarDatos"></div>
+</body>
+</html>
